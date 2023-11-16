@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  padding: 10px;
+}
+
+.top {
+  background: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 336px;
+  background: white;
+  margin: 100px auto 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  font-weight: 900;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.icon1 {
+  margin-left: 285px;
+  margin-bottom: 15px;
+}
+
+.icon1:hover {
+  filter: drop-shadow(8px 8px 10px rgb(42, 42, 42))  brightness(0%) grayscale(100%);
+}
+
+.row {
+  left: 28px;
+  position: relative;
+}
+
+.row img {
+  position:absolute;
+  right:78px;
+  top:10px;
+}
+
+ul {
+  position: relative;
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  max-width: 25ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-icon {
+  position: absolute;
+  right:48px;
+}
+
+#input-box {
+  border-radius: 10px;
+  border: 1px solid #C4C4C4;
+  background: rgba(196, 196, 196, 0.00);
+  margin-bottom: 20px;
+  width: 286px;
+  height: 40px;
+  max-width: 45ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 50px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+button{
+  height: 42px;
+  border-radius: 71px;
+  border: none;
+  color: white;
+}
+
+.button1 {
+  width: 42px;
+  background: #9953F1;  
+  z-index: 2;
+  position: absolute;
+  left: 100px;
+}
+
+.button2 {
+  width: 129px;
+  background: #833AE0; 
+  z-index: 1;
+}
+
+.button1:hover {
+  background-color: #AA68FE; 
+  cursor: pointer; 
+}
+
+
+.button2:hover {
+  background-color: #9953F1; 
+  cursor: pointer; 
+}
+
+li.dragging {
+  background: #f1f1f1; 
+}
